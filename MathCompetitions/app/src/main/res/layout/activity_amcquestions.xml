@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".AMCquestions">
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cmunrm"
+        android:gravity="clip_vertical|start"
+        android:text="TextView"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionWebView" />
+
+    <WebView
+        android:id="@+id/questionWebView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </WebView>
+
+    <LinearLayout
+        android:id="@+id/choiceHolder"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location">
+
+        <WebView
+            android:id="@+id/a"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="75dp"
+            android:layout_marginBottom="5dp" />
+
+        <WebView
+            android:id="@+id/b"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="75dp"
+            android:layout_marginBottom="5dp" />
+
+        <WebView
+            android:id="@+id/c"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="75dp"
+            android:layout_marginBottom="5dp" />
+
+        <WebView
+            android:id="@+id/d"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="75dp"
+            android:layout_marginBottom="5dp" />
+
+        <WebView
+            android:id="@+id/e"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="75dp"
+            android:layout_marginBottom="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/postAnswerButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:translationX="1000dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionWebView">
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="75dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/textColor"
+            android:onClick="showChoices"
+            android:text="Next Question" />
+
+        <Button
+            android:id="@+id/solution"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="75dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/textColor"
+            android:text="Show Solution" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

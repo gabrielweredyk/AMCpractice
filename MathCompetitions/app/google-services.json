@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "511926023283",
+    "firebase_url": "https://mathcompetitions-20ca4-default-rtdb.firebaseio.com",
+    "project_id": "mathcompetitions-20ca4",
+    "storage_bucket": "mathcompetitions-20ca4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:511926023283:android:c7a96d6a804ff4ebbce606",
+        "android_client_info": {
+          "package_name": "com.example.mathcompetitions"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "511926023283-a5f3uqfv2oi6m4u6n0lc7fv7stju0nbs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mathcompetitions",
+            "certificate_hash": "730033ad44f8e5f3163215fb924b330be03270c7"
+          }
+        },
+        {
+          "client_id": "511926023283-1brn1e5agqqeamu8h05aumhjn6o0vnfl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3u0lVXwAQnUcQfhq6yPBhhMpL7Kgzdms"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "511926023283-1brn1e5agqqeamu8h05aumhjn6o0vnfl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
